@@ -1,0 +1,96 @@
+body{
+	font-family: 'Arial';
+	/*text-transform 属性控制文本的大小写。*/
+	text-transform: uppercase;
+	background: #FFE4C4;
+	height: 100%;
+	/*overflow 属性规定当内容溢出元素框时发生的事情。*/
+	overflow: auto;
+}
+
+h1{
+	font-size: 35px;
+	text-align: center;
+
+}
+
+.layer{
+	/*display: flex;
+	align-content: center;
+	justify-content: center;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	/*当我们在页面的主体上过渡时，让我们创建一些样式来平滑转换。*/
+	transition: transform .4s;
+	transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+	transform-style: preserve-3d; 
+}
+
+
+
+nav{
+	/*该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。*/
+	vertical-align: center;
+}
+
+nav ul{
+	padding-right: 50px;
+	font-size: larger;
+	line-height: 2;
+}
+
+nav ul li{
+	list-style-type: none; 
+}
+
+nav ul li a{
+	/*position: relative;*/
+	color: rgba(255, 255, 255, 1);
+	/*下划线属性*/
+	text-decoration: none;
+	background-color: rgba(219, 87, 51, 1);
+	font-weight: 700;
+	/*内边距*/
+	padding: 10px;
+	border-radius: 8px;
+	/*阴影*/
+	box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+	/*字体行高间距*/
+	line-height: 80px;
+	text-align: center;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	transition: all .1s ease;
+	
+}
+
+
+
+.ul{
+	text-align: right;
+}
+
+
+.front{
+	display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+    -moz-box-pack: center;/*兼容Firefox*/
+    -webkit-box-pack: center;/*兼容FSafari、Chrome */  
+	background: #FFFBC1;
+}
+
+body:hover .front{
+	transform: perspective(700px) scale(0.5) translateX(-20%) rotateY(25deg);
+}
+/*点击效果设置*/
+a:active{
+	box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+	position: relative;
+	top: 6px;
+}
