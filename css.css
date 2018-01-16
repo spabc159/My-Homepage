@@ -35,12 +35,14 @@ h1{
 nav{
 	/*该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。*/
 	vertical-align: center;
+	overflow: auto;
 }
 
 nav ul{
 	padding-right: 50px;
 	font-size: larger;
 	line-height: 2;
+
 }
 
 nav ul li{
@@ -55,12 +57,12 @@ nav ul li a{
 	background-color: rgba(219, 87, 51, 1);
 	font-weight: 700;
 	/*内边距*/
-	padding: 10px;
+	padding: 8px;
 	border-radius: 8px;
 	/*阴影*/
 	box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
 	/*字体行高间距*/
-	line-height: 80px;
+	line-height: 70px;
 	text-align: center;
 	-webkit-transition: all .1s ease;
 	-moz-transition: all .1s ease;
